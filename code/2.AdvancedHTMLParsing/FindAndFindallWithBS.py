@@ -5,15 +5,6 @@ html=urlopen("http://www.pythonscraping.com/pages/warandpeace.html")
 
 bsObj = BeautifulSoup(html.read(), "html.parser")
 
-
-namelist = bsObj.findAll("span",{"class":"green"})
-for name in namelist:
-    print(name.get_text())
-
-namelist = bsObj.findAll(text="the prince")
-print(len(namelist))
-
-
-
-
-
+if True:
+    allText = bsObj.findAll(id="text")
+    print(allText[0].get_text())

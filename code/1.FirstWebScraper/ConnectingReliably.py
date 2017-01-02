@@ -22,14 +22,3 @@ if title == None:
     print("page could not be found")
 else:
     print(title)
-
-
-
-
-
-
-
-
-
-
-
